@@ -3,6 +3,7 @@ on: [workflow_dispatch]
 jobs:
   testunit:
     container: throwtheswitch/madsciencelab:0.3.1
+    runs-on: throwtheswitch/madsciencelab
     steps:
       - run: echo "Run desktop (native) unit tests"
       - run: ceedling test:all
