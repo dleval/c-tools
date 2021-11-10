@@ -4,5 +4,5 @@ jobs:
   testunit:
     image: throwtheswitch/madsciencelab:0.3.1
     steps:
-      - echo "Run desktop (native) unit tests"
-      - ceedling test:all
+      - run: echo "Run desktop (native) unit tests"
+      - run: ceedling test:all
