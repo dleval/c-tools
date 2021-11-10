@@ -2,7 +2,7 @@ name: GitHub Actions Test
 on: [workflow_dispatch]
 jobs:
   testunit:
-    image: throwtheswitch/madsciencelab:0.3.1
+    container: throwtheswitch/madsciencelab:0.3.1
     steps:
       - run: echo "Run desktop (native) unit tests"
       - run: ceedling test:all
